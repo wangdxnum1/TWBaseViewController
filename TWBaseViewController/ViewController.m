@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TWBaseViewController.h"
+#import "TWNavBtnItem.h"
 
 @interface ViewController ()
 
@@ -22,6 +24,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    TWBaseViewController *vc = [[TWBaseViewController alloc]init];
+    
+    TWNavBtnItem *item = [[TWNavBtnItem alloc]init];
+    vc.rightBtnItem = item;
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

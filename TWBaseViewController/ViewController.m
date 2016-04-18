@@ -30,8 +30,17 @@
     TWBaseViewController *vc = [[TWBaseViewController alloc]init];
     
     TWNavBtnItem *item = [[TWNavBtnItem alloc]init];
-    vc.rightBtnItem = item;
+    vc.leftBtnItem = item;
     
+    TWNavBtnItem *rightItem = [[TWNavBtnItem alloc]init];
+    rightItem.title = @"更多";
+    rightItem.normalImage = nil;
+    rightItem.hilightedImage = nil;
+    vc.rightBtnItem = rightItem;
+    
+    [vc setupCustomTitle:@"我的账户"];
+    
+    vc.leftBtnItem = nil;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

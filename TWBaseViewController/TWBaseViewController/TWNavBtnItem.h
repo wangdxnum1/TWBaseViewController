@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, TWNavBtnItemType) {
 @property (nonatomic, assign) TWNavBtnItemType itemType;
 
 // 整一个button x的坐标
-@property (nonatomic, assign) CGFloat leftOffetX;
+@property (nonatomic, assign) CGFloat offetX;
 
 // 如果有文字，文字距离image的偏移
 @property (nonatomic, assign) CGFloat titleOffsetX;
@@ -42,6 +42,8 @@ typedef NS_ENUM(NSInteger, TWNavBtnItemType) {
 @property (nonatomic, strong) UIColor *normalTitleColor;
 
 @property (nonatomic, strong) UIColor *hilightedTitleColor;
+
+@property (nonatomic, assign) CGSize size;
 
 @end
 

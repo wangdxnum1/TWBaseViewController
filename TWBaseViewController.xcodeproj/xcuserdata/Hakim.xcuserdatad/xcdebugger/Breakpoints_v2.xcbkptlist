@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TWBaseViewController/TWBaseViewController/TWBaseViewController.m"
-            timestampString = "477819205.55363"
+            timestampString = "482654630.351253"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "-setupRightButton"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-setupLeftButton"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
